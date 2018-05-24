@@ -1,2 +1,2 @@
-# samd_bridgemod
-A SAMD21G18 based easy to solder module.
+# SAMD21 Bridge Module
+An easy to solder Arduino compatible surface mount module aimed to bridge the gap between using "off the shelf" microcontrollers to creating custom PCBs. 
