@@ -1,0 +1,478 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ws2812b
+LIBS:mcp73831t
+LIBS:mpu-9250
+LIBS:acs712
+LIBS:adxl345
+LIBS:arduino
+LIBS:samd_hcc_mod
+LIBS:hcc_arduino-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "ARDUINO HCC MOD"
+Date "2018-06-24"
+Rev "0.1p"
+Comp "Idle Hands Dev."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5AF559B5
+P 5100 2650
+F 0 "#PWR01" H 5100 2400 50  0001 C CNN
+F 1 "GND" H 5100 2500 50  0000 C CNN
+F 2 "" H 5100 2650 60  0000 C CNN
+F 3 "" H 5100 2650 60  0000 C CNN
+	1    5100 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2550 5000 2550
+Wire Wire Line
+	5000 2250 5850 2250
+Wire Wire Line
+	5000 1950 5000 2150
+$Comp
+L VBUS #PWR02
+U 1 1 5AF59366
+P 5250 1950
+F 0 "#PWR02" H 5250 1800 50  0001 C CNN
+F 1 "VBUS" H 5250 2100 50  0000 C CNN
+F 2 "" H 5250 1950 50  0001 C CNN
+F 3 "" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR03
+U 1 1 5AF5A22E
+P 5000 1950
+F 0 "#PWR03" H 5000 1800 50  0001 C CNN
+F 1 "+BATT" H 5000 2090 50  0000 C CNN
+F 2 "" H 5000 1950 50  0001 C CNN
+F 3 "" H 5000 1950 50  0001 C CNN
+	1    5000 1950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3150 3100 0    39   Input ~ 0
+RESET
+Text GLabel 3150 4100 0    39   Input ~ 0
+A0/DAC
+Text GLabel 3150 4200 0    39   Input ~ 0
+A1
+Text GLabel 3150 4300 0    39   Input ~ 0
+A2
+Text GLabel 3150 4400 0    39   Input ~ 0
+A3
+Text GLabel 3150 4500 0    39   Input ~ 0
+A4
+Text GLabel 4250 4650 2    39   Input ~ 0
+RX/D0
+Text GLabel 4250 4550 2    39   Input ~ 0
+TX/D1
+Text GLabel 4250 4350 2    39   Input ~ 0
+D3
+Text GLabel 4250 4250 2    39   Input ~ 0
+D4
+$Comp
+L GND #PWR04
+U 1 1 5AF924A7
+P 3050 3250
+F 0 "#PWR04" H 3050 3000 50  0001 C CNN
+F 1 "GND" H 3050 3100 50  0000 C CNN
+F 2 "" H 3050 3250 60  0000 C CNN
+F 3 "" H 3050 3250 60  0000 C CNN
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2900 3100 2900
+Wire Wire Line
+	3100 2900 3100 2700
+$Comp
+L +3.3V #PWR05
+U 1 1 5AF9B481
+P 3100 2700
+F 0 "#PWR05" H 3100 2550 50  0001 C CNN
+F 1 "+3.3V" H 3100 2840 50  0000 C CNN
+F 2 "" H 3100 2700 60  0000 C CNN
+F 3 "" H 3100 2700 60  0000 C CNN
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 4600 0    39   Input ~ 0
+A5
+Text GLabel 3150 3600 0    39   Input ~ 0
+CLK
+Text GLabel 3150 3500 0    39   Input ~ 0
+MOSI
+Text GLabel 3150 3700 0    39   Input ~ 0
+MISO
+Text GLabel 4250 2950 2    39   Input ~ 0
+SCL
+Text GLabel 4250 4150 2    39   Input ~ 0
+D5
+Text GLabel 4250 4050 2    39   Input ~ 0
+D6
+Text GLabel 4250 3700 2    39   Input ~ 0
+D9
+Text GLabel 4250 3600 2    39   Input ~ 0
+D10
+Text GLabel 4250 3500 2    39   Input ~ 0
+D11
+Text GLabel 4250 3400 2    39   Input ~ 0
+D12
+Text GLabel 4250 3300 2    39   Input ~ 0
+D13
+Text GLabel 4250 3050 2    39   Input ~ 0
+SDA
+$Comp
+L Arduino_M0_Shield XA1
+U 1 1 5B2FB3AD
+P 9950 3450
+F 0 "XA1" V 10050 3450 60  0000 C CNN
+F 1 "Arduino_M0_Shield" V 9850 3450 60  0000 C CNN
+F 2 "arduino_shields:Arduino_Uno_Shield" H 11750 7200 60  0001 C CNN
+F 3 "" H 11750 7200 60  0001 C CNN
+	1    9950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SAMD21_MOD U1
+U 1 1 5B2FBA82
+P 3700 3850
+F 0 "U1" V 3600 2650 60  0000 C CNN
+F 1 "SAMD21_MOD" H 3700 5000 60  0000 C CNN
+F 2 "idlehands_libs:SAMD_HCC_G_FOOT" H 3700 3850 60  0001 C CNN
+F 3 "" H 3700 3850 60  0001 C CNN
+	1    3700 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 3000 0    39   Input ~ 0
+AREF
+Wire Wire Line
+	3050 3250 3050 3200
+Wire Wire Line
+	3050 3200 3150 3200
+Wire Wire Line
+	5250 2250 5250 1950
+Wire Wire Line
+	5100 2650 5100 2550
+$Comp
+L USB_B J2
+U 1 1 5B2FB672
+P 6150 2400
+F 0 "J2" H 5950 2850 50  0000 L CNN
+F 1 "USB_B" H 5950 2750 50  0000 L CNN
+F 2 "Connectors_USB:USB_Micro-B_Molex-105017-0001" H 6300 2350 50  0001 C CNN
+F 3 "" H 6300 2350 50  0001 C CNN
+	1    6150 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2350 5400 2350
+Wire Wire Line
+	5400 2350 5400 2500
+Wire Wire Line
+	5400 2500 5850 2500
+Wire Wire Line
+	5000 2450 5650 2450
+Wire Wire Line
+	5650 2450 5650 2400
+Wire Wire Line
+	5650 2400 5850 2400
+Wire Wire Line
+	5850 2250 5850 2200
+Connection ~ 5250 2250
+Wire Wire Line
+	6150 2800 6150 2950
+$Comp
+L GND #PWR06
+U 1 1 5B2FB8F1
+P 6150 2950
+F 0 "#PWR06" H 6150 2700 50  0001 C CNN
+F 1 "GND" H 6150 2800 50  0000 C CNN
+F 2 "" H 6150 2950 60  0000 C CNN
+F 3 "" H 6150 2950 60  0000 C CNN
+	1    6150 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5B2FB946
+P 2350 1550
+F 0 "J1" H 2350 1650 50  0000 C CNN
+F 1 "BATT" H 2350 1350 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B2B-PH-SM4-TB_02x2.00mm_Straight" H 2350 1550 50  0001 C CNN
+F 3 "" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR07
+U 1 1 5B2FBE8D
+P 2650 1350
+F 0 "#PWR07" H 2650 1200 50  0001 C CNN
+F 1 "+BATT" H 2650 1490 50  0000 C CNN
+F 2 "" H 2650 1350 50  0001 C CNN
+F 3 "" H 2650 1350 50  0001 C CNN
+	1    2650 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5B2FBEA4
+P 2650 1650
+F 0 "#PWR08" H 2650 1400 50  0001 C CNN
+F 1 "GND" H 2650 1500 50  0000 C CNN
+F 2 "" H 2650 1650 60  0000 C CNN
+F 3 "" H 2650 1650 60  0000 C CNN
+	1    2650 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1450 2650 1450
+Wire Wire Line
+	2650 1450 2650 1350
+Wire Wire Line
+	2550 1550 2650 1550
+Wire Wire Line
+	2650 1550 2650 1650
+Text Notes 3200 1400 0    60   ~ 0
+Battery and VBUS isolated by HCC Mod.
+Text GLabel 8650 2400 0    39   Input ~ 0
+RX/D0
+Text GLabel 8650 2500 0    39   Input ~ 0
+TX/D1
+Text GLabel 11250 2500 2    39   Input ~ 0
+D3
+Text GLabel 11250 2600 2    39   Input ~ 0
+D4
+Text GLabel 11250 2700 2    39   Input ~ 0
+D5
+Text GLabel 11250 2800 2    39   Input ~ 0
+D6
+Text GLabel 11250 3100 2    39   Input ~ 0
+D9
+Text GLabel 11250 3200 2    39   Input ~ 0
+D10
+Text GLabel 11250 3300 2    39   Input ~ 0
+D11
+Text GLabel 11250 3400 2    39   Input ~ 0
+D12
+Text GLabel 11250 3500 2    39   Input ~ 0
+D13
+Text GLabel 11250 3800 2    39   Input ~ 0
+MOSI
+Text GLabel 11250 3900 2    39   Input ~ 0
+CLK
+Text GLabel 11250 3700 2    39   Input ~ 0
+MISO
+$Comp
+L +3.3V #PWR09
+U 1 1 5B2FC31B
+P 11600 3900
+F 0 "#PWR09" H 11600 3750 50  0001 C CNN
+F 1 "+3.3V" H 11600 4040 50  0000 C CNN
+F 2 "" H 11600 3900 60  0000 C CNN
+F 3 "" H 11600 3900 60  0000 C CNN
+	1    11600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5B2FC332
+P 11600 4200
+F 0 "#PWR010" H 11600 3950 50  0001 C CNN
+F 1 "GND" H 11600 4050 50  0000 C CNN
+F 2 "" H 11600 4200 60  0000 C CNN
+F 3 "" H 11600 4200 60  0000 C CNN
+	1    11600 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 11250 4200 2    39   Input ~ 0
+RESET
+Wire Wire Line
+	11250 4100 11600 4100
+Wire Wire Line
+	11600 4100 11600 4200
+Wire Wire Line
+	11250 4000 11600 4000
+Wire Wire Line
+	11600 4000 11600 3900
+Text GLabel 11250 4400 2    39   Input ~ 0
+RESET
+$Comp
+L VBUS #PWR011
+U 1 1 5B2FC453
+P 8200 4350
+F 0 "#PWR011" H 8200 4200 50  0001 C CNN
+F 1 "VBUS" H 8200 4500 50  0000 C CNN
+F 2 "" H 8200 4350 50  0001 C CNN
+F 3 "" H 8200 4350 50  0001 C CNN
+	1    8200 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 5B2FC46A
+P 8350 4250
+F 0 "#PWR012" H 8350 4100 50  0001 C CNN
+F 1 "+3.3V" H 8350 4390 50  0000 C CNN
+F 2 "" H 8350 4250 60  0000 C CNN
+F 3 "" H 8350 4250 60  0000 C CNN
+	1    8350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR013
+U 1 1 5B2FC481
+P 8000 4450
+F 0 "#PWR013" H 8000 4300 50  0001 C CNN
+F 1 "+BATT" H 8000 4590 50  0000 C CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5B2FC498
+P 8400 3850
+F 0 "#PWR014" H 8400 3600 50  0001 C CNN
+F 1 "GND" H 8400 3700 50  0000 C CNN
+F 2 "" H 8400 3850 60  0000 C CNN
+F 3 "" H 8400 3850 60  0000 C CNN
+	1    8400 3850
+	0    1    -1   0   
+$EndComp
+Text GLabel 8650 3700 0    39   Input ~ 0
+AREF
+Text GLabel 8650 3600 0    39   Input ~ 0
+A0/DAC
+Text GLabel 8650 3500 0    39   Input ~ 0
+A1
+Text GLabel 8650 3400 0    39   Input ~ 0
+A2
+Text GLabel 8650 3300 0    39   Input ~ 0
+A3
+Text GLabel 8650 3200 0    39   Input ~ 0
+A4
+Text GLabel 8650 3100 0    39   Input ~ 0
+A5
+Text GLabel 8650 2800 0    39   Input ~ 0
+SDA
+Text GLabel 8650 2700 0    39   Input ~ 0
+SCL
+Wire Wire Line
+	8400 3850 8550 3850
+Wire Wire Line
+	8550 3850 8550 4200
+Wire Wire Line
+	8550 4000 8650 4000
+Wire Wire Line
+	8550 4200 8650 4200
+Connection ~ 8550 4000
+Wire Wire Line
+	8650 4100 8550 4100
+Connection ~ 8550 4100
+Wire Wire Line
+	8350 4250 8350 4300
+Wire Wire Line
+	8350 4300 8650 4300
+Wire Wire Line
+	8200 4350 8200 4400
+Wire Wire Line
+	8200 4400 8650 4400
+Wire Wire Line
+	8000 4450 8000 4500
+Wire Wire Line
+	8000 4500 8650 4500
+$Comp
+L Conn_01x01 J6
+U 1 1 5B2FCB46
+P 11900 4500
+F 0 "J6" H 11900 4600 50  0000 C CNN
+F 1 "IOREF" H 11900 4400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 4500 50  0001 C CNN
+F 3 "" H 11900 4500 50  0001 C CNN
+	1    11900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5B2FCC14
+P 11600 2400
+F 0 "J3" H 11600 2500 50  0000 C CNN
+F 1 "D2" H 11600 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11600 2400 50  0001 C CNN
+F 3 "" H 11600 2400 50  0001 C CNN
+	1    11600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5B2FCCB8
+P 11600 2900
+F 0 "J4" H 11600 3000 50  0000 C CNN
+F 1 "D7" H 11600 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11600 2900 50  0001 C CNN
+F 3 "" H 11600 2900 50  0001 C CNN
+	1    11600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5B2FCD07
+P 11900 3000
+F 0 "J5" H 11900 3100 50  0000 C CNN
+F 1 "D8" H 11900 2900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 3000 50  0001 C CNN
+F 3 "" H 11900 3000 50  0001 C CNN
+	1    11900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 2400 11400 2400
+Wire Wire Line
+	11250 2900 11400 2900
+Wire Wire Line
+	11250 3000 11700 3000
+Wire Wire Line
+	11250 4500 11700 4500
+$EndSCHEMATC

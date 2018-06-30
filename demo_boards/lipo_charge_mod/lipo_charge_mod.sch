@@ -1,0 +1,305 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mcp73831t
+LIBS:lipo_charge_mod-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2016-10-08"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 8900 3650 0    60   Input ~ 0
+VBATT
+$Comp
+L MCP73831T U5
+U 1 1 5912C294
+P 7000 3250
+F 0 "U5" H 6750 3600 60  0000 C CNN
+F 1 "MCP73831T" H 7050 2850 60  0000 C CNN
+F 2 "idlehands_libs:sot23-5" H 6800 3700 60  0001 C CNN
+F 3 "" H 6800 3700 60  0000 C CNN
+F 4 "MCP73831T-2ACI/OTCT-ND" H 7000 3250 60  0001 C CNN "Digikey Part No."
+	1    7000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5912FE33
+P 7650 3600
+F 0 "#PWR01" H 7650 3350 50  0001 C CNN
+F 1 "GND" H 7650 3450 50  0000 C CNN
+F 2 "" H 7650 3600 60  0000 C CNN
+F 3 "" H 7650 3600 60  0000 C CNN
+	1    7650 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 3050 2    60   Input ~ 0
+VBATT
+$Comp
+L C_Small C10
+U 1 1 5913178E
+P 7650 3200
+F 0 "C10" H 7660 3270 50  0000 L CNN
+F 1 "4.7uF" H 7660 3120 50  0001 L CNN
+F 2 "project_footprints:C_0402_Hand" H 7650 3200 60  0001 C CNN
+F 3 "" H 7650 3200 60  0000 C CNN
+F 4 "490-5915-1-ND" H 7650 3200 60  0001 C CNN "Digikey Part No."
+	1    7650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 59135163
+P 5300 3150
+F 0 "C7" H 5310 3220 50  0000 L CNN
+F 1 "4.7uF" H 5310 3070 50  0001 L CNN
+F 2 "project_footprints:C_0402_Hand" H 5300 3150 60  0001 C CNN
+F 3 "" H 5300 3150 60  0000 C CNN
+F 4 "490-5915-1-ND" H 5300 3150 60  0001 C CNN "Digikey Part No."
+	1    5300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5913ACE2
+P 6200 2550
+F 0 "#PWR02" H 6200 2400 50  0001 C CNN
+F 1 "VCC" H 6200 2700 50  0000 C CNN
+F 2 "" H 6200 2550 60  0000 C CNN
+F 3 "" H 6200 2550 60  0000 C CNN
+	1    6200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5913B3D4
+P 5300 3350
+F 0 "#PWR03" H 5300 3100 50  0001 C CNN
+F 1 "GND" H 5300 3200 50  0000 C CNN
+F 2 "" H 5300 3350 60  0000 C CNN
+F 3 "" H 5300 3350 60  0000 C CNN
+	1    5300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5913EBA3
+P 5700 4100
+F 0 "R5" V 5780 4100 50  0000 C CNN
+F 1 "33k" V 5700 4100 50  0000 C CNN
+F 2 "project_footprints:R_0402_Hand" V 5630 4100 30  0001 C CNN
+F 3 "" H 5700 4100 30  0000 C CNN
+F 4 "311-33KJRCT-ND" V 5700 4100 60  0001 C CNN "Digikey Part No."
+	1    5700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5913FF83
+P 5600 4400
+F 0 "#PWR04" H 5600 4150 50  0001 C CNN
+F 1 "GND" H 5600 4250 50  0000 C CNN
+F 2 "" H 5600 4400 60  0000 C CNN
+F 3 "" H 5600 4400 60  0000 C CNN
+	1    5600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-theduo D6
+U 1 1 5955DFC7
+P 6350 4250
+F 0 "D6" H 6350 4350 50  0000 C CNN
+F 1 "CHRG" H 6350 4150 50  0000 C CNN
+F 2 "idlehands_footprints:Led_0603" H 6350 4250 60  0001 C CNN
+F 3 "" H 6350 4250 60  0000 C CNN
+F 4 "160-1436-1-ND" H 6350 4250 60  0001 C CNN "Digikey Part No."
+	1    6350 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 5955DFCE
+P 6350 3800
+F 0 "R14" V 6430 3800 50  0000 C CNN
+F 1 "1K" V 6350 3800 50  0000 C CNN
+F 2 "project_footprints:R_0402_Hand" V 6280 3800 30  0001 C CNN
+F 3 "" H 6350 3800 30  0000 C CNN
+F 4 "311-1.0KJRCT-ND" V 6350 3800 60  0001 C CNN "Digikey Part No."
+	1    6350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 595611F9
+P 6050 4450
+F 0 "#PWR05" H 6050 4300 50  0001 C CNN
+F 1 "VCC" H 6050 4600 50  0000 C CNN
+F 2 "" H 6050 4450 60  0000 C CNN
+F 3 "" H 6050 4450 60  0000 C CNN
+	1    6050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GS3 J1
+U 1 1 5B351A3F
+P 5600 3650
+F 0 "J1" H 5650 3850 50  0000 C CNN
+F 1 "GS3" H 5650 3451 50  0000 C CNN
+F 2 "idlehands_libs:3WAY_JUMPER_SMD" V 5688 3576 50  0001 C CNN
+F 3 "" H 5600 3650 50  0001 C CNN
+	1    5600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5B35206B
+P 5500 4100
+F 0 "R1" V 5580 4100 50  0000 C CNN
+F 1 "0" V 5500 4100 50  0000 C CNN
+F 2 "project_footprints:R_0402_Hand" V 5430 4100 30  0001 C CNN
+F 3 "" H 5500 4100 30  0000 C CNN
+	1    5500 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5B3527EC
+P 8450 3600
+F 0 "#PWR06" H 8450 3450 50  0001 C CNN
+F 1 "VCC" H 8450 3750 50  0000 C CNN
+F 2 "" H 8450 3600 60  0000 C CNN
+F 3 "" H 8450 3600 60  0000 C CNN
+	1    8450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5B352F95
+P 9350 3850
+F 0 "J2" H 9350 4150 50  0000 C CNN
+F 1 "Conn_01x06" H 9350 3450 50  0000 C CNN
+F 2 "idlehands_libs:LIPO_CHARGE_MOD" H 9350 3850 50  0001 C CNN
+F 3 "" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B3530E3
+P 8900 4250
+F 0 "#PWR07" H 8900 4000 50  0001 C CNN
+F 1 "GND" H 8900 4100 50  0000 C CNN
+F 2 "" H 8900 4250 60  0000 C CNN
+F 3 "" H 8900 4250 60  0000 C CNN
+	1    8900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3650 9150 3650
+Wire Wire Line
+	8450 3750 9150 3750
+Wire Wire Line
+	7600 3050 7750 3050
+Connection ~ 7650 3050
+Wire Wire Line
+	7650 3300 7650 3600
+Wire Wire Line
+	7600 3500 7650 3500
+Connection ~ 7650 3500
+Wire Wire Line
+	6200 2550 6200 3050
+Wire Wire Line
+	5300 3050 6400 3050
+Connection ~ 6200 3050
+Connection ~ 6200 2600
+Wire Wire Line
+	5300 3250 5300 3350
+Wire Wire Line
+	6400 3500 6350 3500
+Wire Wire Line
+	6350 3950 6350 4050
+Wire Wire Line
+	6350 3500 6350 3650
+Wire Wire Line
+	6350 4450 6350 4550
+Wire Wire Line
+	6350 4550 6050 4550
+Wire Wire Line
+	6050 4550 6050 4450
+Wire Wire Line
+	7650 3100 7650 3050
+Wire Wire Line
+	8450 3750 8450 3600
+Wire Wire Line
+	9150 3850 8900 3850
+Wire Wire Line
+	8900 3850 8900 4250
+Wire Wire Line
+	8900 4150 9150 4150
+Connection ~ 8900 4150
+Wire Wire Line
+	9050 3650 9050 3950
+Wire Wire Line
+	9050 3950 9150 3950
+Connection ~ 9050 3650
+Wire Wire Line
+	9000 3750 9000 4050
+Wire Wire Line
+	9000 4050 9150 4050
+Connection ~ 9000 3750
+Wire Wire Line
+	6400 3400 5600 3400
+Wire Wire Line
+	5600 3400 5600 3500
+Wire Wire Line
+	5500 4250 5700 4250
+Wire Wire Line
+	5600 4250 5600 4400
+Connection ~ 5600 4250
+Wire Wire Line
+	5500 3950 5500 3800
+Wire Wire Line
+	5700 3950 5700 3800
+Wire Wire Line
+	5700 3900 5900 3900
+Wire Wire Line
+	5900 3900 5900 3400
+Connection ~ 5900 3400
+Connection ~ 5700 3900
+$EndSCHEMATC
