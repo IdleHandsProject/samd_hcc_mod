@@ -1,4 +1,4 @@
-update=10/05/2018 11:26:33 PM
+update=19/07/2018 11:53:24 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -74,3 +74,4 @@ LibName32=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/mpu-9250
 LibName33=project_libs/acs712
 LibName34=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/adxl345
 LibName35=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/samd21_mod
+LibName36=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/AP2112k
