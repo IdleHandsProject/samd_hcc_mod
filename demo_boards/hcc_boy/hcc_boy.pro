@@ -1,4 +1,4 @@
-update=10/05/2018 11:26:33 PM
+update=7/6/2018 1:45:21 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,8 +69,7 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/ws2812b
-LibName31=project_libs/mcp73831t
-LibName32=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/mpu-9250
-LibName33=project_libs/acs712
-LibName34=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/adxl345
-LibName35=C:/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/samd21_mod
+LibName31=//HODGINSA-LAPTOP/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/sparkfun
+LibName32=//HODGINSA-LAPTOP/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/apa102
+LibName33=//HODGINSA-LAPTOP/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/samd_hcc_mod
+LibName34=//HODGINSA-LAPTOP/Users/hodginsa/Documents/idlehandsdev/idlehands_libs/joystick

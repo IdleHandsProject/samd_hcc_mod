@@ -1,0 +1,330 @@
+EESchema Schematic File Version 2
+LIBS:programming_jig-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ws2812b
+LIBS:mcp73831t
+LIBS:mpu-9250
+LIBS:acs712
+LIBS:adxl345
+LIBS:arduino
+LIBS:samd_hcc_mod
+LIBS:programming_jig-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BOOTLOADER PROGRAMMER HCC"
+Date "2018-07-03"
+Rev "0.1p"
+Comp "Idle Hands Dev."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x05 J2
+U 1 1 5B3B95F3
+P 3250 2400
+F 0 "J2" H 3250 2700 50  0000 C CNN
+F 1 "Trinket_Right" H 3250 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 3250 2400 50  0001 C CNN
+F 3 "" H 3250 2400 50  0001 C CNN
+	1    3250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J1
+U 1 1 5B3B9925
+P 2150 2400
+F 0 "J1" H 2150 2700 50  0000 C CNN
+F 1 "Trinket_Left" H 2150 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 2150 2400 50  0001 C CNN
+F 3 "" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2350 2200 2    60   Input ~ 0
+BATT
+Text GLabel 2350 2400 2    60   Input ~ 0
+4
+Text GLabel 2350 2500 2    60   Input ~ 0
+3
+Text GLabel 2350 2600 2    60   Input ~ 0
+RST_TRNK
+Text GLabel 3050 2200 0    60   Input ~ 0
+USB
+Text GLabel 3050 2300 0    60   Input ~ 0
+0
+Text GLabel 3050 2400 0    60   Input ~ 0
+1
+Text GLabel 3050 2500 0    60   Input ~ 0
+2
+$Comp
+L TEST_1P J3
+U 1 1 5B3B9B49
+P 4700 1850
+F 0 "J3" H 4700 2120 50  0000 C CNN
+F 1 "3V3" H 4700 2050 50  0000 C CNN
+F 2 "project_footprints:POGO_PIN" H 4900 1850 50  0001 C CNN
+F 3 "" H 4900 1850 50  0001 C CNN
+	1    4700 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J4
+U 1 1 5B3B9E45
+P 4700 2200
+F 0 "J4" H 4700 2470 50  0000 C CNN
+F 1 "GND" H 4700 2400 50  0000 C CNN
+F 2 "project_footprints:POGO_PIN" H 4900 2200 50  0001 C CNN
+F 3 "" H 4900 2200 50  0001 C CNN
+	1    4700 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J5
+U 1 1 5B3B9E6F
+P 4700 2500
+F 0 "J5" H 4700 2770 50  0000 C CNN
+F 1 "RST" H 4700 2700 50  0000 C CNN
+F 2 "project_footprints:POGO_PIN" H 4900 2500 50  0001 C CNN
+F 3 "" H 4900 2500 50  0001 C CNN
+	1    4700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J6
+U 1 1 5B3B9EF6
+P 4700 2800
+F 0 "J6" H 4700 3070 50  0000 C CNN
+F 1 "SWDIO" H 4700 3000 50  0000 C CNN
+F 2 "project_footprints:POGO_PIN" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4700 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J7
+U 1 1 5B3B9F28
+P 4700 3100
+F 0 "J7" H 4700 3370 50  0000 C CNN
+F 1 "SWCLK" H 4700 3300 50  0000 C CNN
+F 2 "project_footprints:POGO_PIN" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4700 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2300 2650 2300
+Wire Wire Line
+	2650 2300 2650 2850
+$Comp
+L GND #PWR01
+U 1 1 5B3BA297
+P 2650 2850
+F 0 "#PWR01" H 2650 2600 50  0001 C CNN
+F 1 "GND" H 2650 2700 50  0000 C CNN
+F 2 "" H 2650 2850 50  0001 C CNN
+F 3 "" H 2650 2850 50  0001 C CNN
+	1    2650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5B3BA316
+P 2750 2050
+F 0 "#PWR02" H 2750 1900 50  0001 C CNN
+F 1 "+3.3V" H 2750 2190 50  0000 C CNN
+F 2 "" H 2750 2050 50  0001 C CNN
+F 3 "" H 2750 2050 50  0001 C CNN
+	1    2750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2050 2750 2600
+Wire Wire Line
+	2750 2600 3050 2600
+$Comp
+L GND #PWR03
+U 1 1 5B3BA351
+P 4500 2250
+F 0 "#PWR03" H 4500 2000 50  0001 C CNN
+F 1 "GND" H 4500 2100 50  0000 C CNN
+F 2 "" H 4500 2250 50  0001 C CNN
+F 3 "" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2200 4500 2200
+Wire Wire Line
+	4500 2200 4500 2250
+$Comp
+L +3.3V #PWR04
+U 1 1 5B3BA387
+P 4500 1750
+F 0 "#PWR04" H 4500 1600 50  0001 C CNN
+F 1 "+3.3V" H 4500 1890 50  0000 C CNN
+F 2 "" H 4500 1750 50  0001 C CNN
+F 3 "" H 4500 1750 50  0001 C CNN
+	1    4500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1850 4500 1850
+Wire Wire Line
+	4500 1850 4500 1750
+Text GLabel 4700 2500 0    60   Input ~ 0
+RST
+Text GLabel 4700 2800 0    60   Input ~ 0
+SWDIO
+Text GLabel 4700 3100 0    60   Input ~ 0
+SWCLK
+$Comp
+L tactile_switch U3
+U 1 1 5B3BB263
+P 6600 1550
+F 0 "U3" H 6600 1400 60  0000 C CNN
+F 1 "SW3" H 6950 1800 60  0000 C CNN
+F 2 "idlehands_libs:SW_SPST_PTS645" H 6600 1550 60  0001 C CNN
+F 3 "" H 6600 1550 60  0001 C CNN
+	1    6600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L tactile_switch U2
+U 1 1 5B3BB68C
+P 6600 2150
+F 0 "U2" H 6600 1950 60  0000 C CNN
+F 1 "SW2" H 6950 2350 60  0000 C CNN
+F 2 "idlehands_libs:SW_SPST_PTS645" H 6600 2150 60  0001 C CNN
+F 3 "" H 6600 2150 60  0001 C CNN
+	1    6600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L tactile_switch U1
+U 1 1 5B3BB6E3
+P 6600 2750
+F 0 "U1" H 6600 2650 60  0000 C CNN
+F 1 "SW1" H 6900 3000 60  0000 C CNN
+F 2 "idlehands_libs:SW_SPST_PTS645" H 6600 2750 60  0001 C CNN
+F 3 "" H 6600 2750 60  0001 C CNN
+	1    6600 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 2750 0    60   Input ~ 0
+0
+Text GLabel 6150 2150 0    60   Input ~ 0
+1
+Text GLabel 6150 1550 0    60   Input ~ 0
+2
+$Comp
+L GND #PWR05
+U 1 1 5B3BBB13
+P 7150 2950
+F 0 "#PWR05" H 7150 2700 50  0001 C CNN
+F 1 "GND" H 7150 2800 50  0000 C CNN
+F 2 "" H 7150 2950 50  0001 C CNN
+F 3 "" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1550 7150 1550
+Wire Wire Line
+	7150 1550 7150 2950
+Wire Wire Line
+	7050 2150 7150 2150
+Connection ~ 7150 2150
+Wire Wire Line
+	7050 2750 7150 2750
+Connection ~ 7150 2750
+$Comp
+L Conn_01x10 P1
+U 1 1 5B3BB1B1
+P 8600 2250
+F 0 "P1" H 8600 2800 50  0000 C CNN
+F 1 "DBG_CONN" V 8700 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm" H 8600 2250 60  0001 C CNN
+F 3 "" H 8600 2250 60  0000 C CNN
+F 4 "1175-1627-ND" H 8600 2250 60  0001 C CNN "Digikey Part No."
+	1    8600 2250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9000 2150 2    60   Input ~ 0
+SWCLK
+Text GLabel 9000 1950 2    60   Input ~ 0
+SWDIO
+$Comp
+L GND #PWR06
+U 1 1 5B3BB1BA
+P 9400 2450
+F 0 "#PWR06" H 9400 2200 50  0001 C CNN
+F 1 "GND" H 9400 2300 50  0000 C CNN
+F 2 "" H 9400 2450 60  0000 C CNN
+F 3 "" H 9400 2450 60  0000 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 5B3BB1C0
+P 9000 1650
+F 0 "#PWR07" H 9000 1500 50  0001 C CNN
+F 1 "+3.3V" H 9000 1790 50  0000 C CNN
+F 2 "" H 9000 1650 60  0000 C CNN
+F 3 "" H 9000 1650 60  0000 C CNN
+	1    9000 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 2750 2    60   Input ~ 0
+RST
+Wire Wire Line
+	8800 1850 9000 1850
+Wire Wire Line
+	8800 2050 9400 2050
+Wire Wire Line
+	8800 2250 9400 2250
+Wire Wire Line
+	8800 1950 9000 1950
+Wire Wire Line
+	8800 2150 9000 2150
+Wire Wire Line
+	8800 2750 9100 2750
+Wire Wire Line
+	9000 1850 9000 1650
+Wire Wire Line
+	9400 2050 9400 2450
+Connection ~ 9400 2250
+$EndSCHEMATC
