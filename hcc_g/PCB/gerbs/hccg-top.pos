@@ -1,0 +1,20 @@
+### Module positions - created on 07/19/18 20:35:06 ###
+### Printed by Pcbnew version kicad 4.0.7
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val           Package                PosX       PosY       Rot  Side
+C2        15pF          C_0402               3.5700     7.9500   90.0000  top
+C3        0.1uF         C_0402               2.8200    10.0500  180.0000  top
+C4        15pF          C_0402               2.2700     7.9500   90.0000  top
+C5        0.1uF         C_0402               2.8200    11.3000  180.0000  top
+C8        1uF           C_0402              12.1900    17.0500  270.0000  top
+C9        1uF           C_0402               7.1700    17.8700  270.0000  top
+C11       0.1uF         C_0402              14.0700    10.3500    0.0000  top
+C12       0.1uF         C_0402               3.9700    16.1500   90.0000  top
+D1        GLED          LED-0603             2.2500     1.7500  270.0000  top
+D2        YLED          LED-0603            15.7500     1.7500  270.0000  top
+R3        10k           R_0402               2.8200    13.0000    0.0000  top
+R8        1k            R_0402               4.0700     2.5000  180.0000  top
+R9        1k            R_0402              13.9200     2.5000    0.0000  top
+U1        AP2112K-3.3V  SOT-23-5             9.7300    18.5700  180.0000  top
+## End
