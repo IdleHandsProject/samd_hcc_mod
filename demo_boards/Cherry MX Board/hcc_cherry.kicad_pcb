@@ -3,9 +3,9 @@
   (general
     (links 67)
     (no_connects 6)
-    (area 161.569999 102.199999 238.670001 179.300001)
+    (area 137.442 84.086 263.680001 191.272001)
     (thickness 1.6)
-    (drawings 28)
+    (drawings 29)
     (tracks 200)
     (zones 0)
     (modules 23)
@@ -1813,6 +1813,9 @@
       (xy 6.670737 -4.683673) (xy 6.739949 -4.686874) (xy 6.788154 -4.672533)) (layer F.SilkS) (width 0.01))
   )
 
+  (gr_text "Cherry MX Demo Board for the HCC Module\nIdleHandsDev.com\nyoutube.com/SeanHodginsFilms" (at 226.12 173.95) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left mirror))
+  )
   (dimension 77.5 (width 0.3) (layer Cmts.User)
     (gr_text "77.500 mm" (at 199.87 186.7) (layer Cmts.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
