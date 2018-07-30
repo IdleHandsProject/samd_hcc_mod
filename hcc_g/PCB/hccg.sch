@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:hccg-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,12 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ws2812b
-LIBS:mcp73831t
-LIBS:mpu-9250
-LIBS:acs712
-LIBS:adxl345
-LIBS:samd21_mod
+LIBS:AP2112k
+LIBS:samd_hcc_mod
 LIBS:hccg-cache
 EELAYER 25 0
 EELAYER END
@@ -701,7 +698,7 @@ MOSI
 Text GLabel 6250 4350 2    39   Input ~ 0
 CLK
 $Comp
-L SAMD21_MOD U4
+L SAMD21_MOD-RESCUE-hccg U4
 U 1 1 5AF54837
 P 11250 5250
 F 0 "U4" H 11250 4250 60  0000 C CNN

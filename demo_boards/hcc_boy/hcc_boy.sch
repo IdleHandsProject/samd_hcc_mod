@@ -633,4 +633,14 @@ Text GLabel 8400 1700 0    39   Input ~ 0
 A4
 Text GLabel 7500 4700 0    39   Input ~ 0
 A5
+Text Notes 12800 2950 0    60   ~ 0
+CS
+Text Notes 12800 3050 0    60   ~ 0
+DC
+Text Notes 12750 3150 0    60   ~ 0
+RES
+Text Notes 12700 3250 0    60   ~ 0
+DATA
+Text Notes 12700 3350 0    60   ~ 0
+CLK
 $EndSCHEMATC
