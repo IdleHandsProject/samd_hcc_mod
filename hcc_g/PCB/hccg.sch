@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:hccg-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:AP2112k
-LIBS:samd_hcc_mod
+EESchema Schematic File Version 4
 LIBS:hccg-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -47,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SAMD21G18 U2
+L AP2112k:SAMD21G18 U2
 U 1 1 56BE5542
 P 4150 3050
 F 0 "U2" H 2500 4700 40  0000 C CNN
@@ -59,7 +27,7 @@ F 4 "ATSAMD21G18A-MU-ND" H 4150 3050 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R3
+L Device:R_Small R3
 U 1 1 56BE56C8
 P 2150 1350
 F 0 "R3" H 2180 1370 50  0000 L CNN
@@ -71,7 +39,7 @@ F 4 "1276-3431-1-ND" H 2150 1350 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L Device:C_Small C3
 U 1 1 56BE5797
 P 1650 1950
 F 0 "C3" H 1660 2020 50  0000 L CNN
@@ -83,7 +51,7 @@ F 4 "490-5415-1-ND" H 1650 1950 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
+L Device:C_Small C5
 U 1 1 56BE5879
 P 1800 1950
 F 0 "C5" H 1810 2020 50  0000 L CNN
@@ -95,7 +63,7 @@ F 4 "490-5415-1-ND" H 1800 1950 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L Device:C_Small C2
 U 1 1 56BE5A87
 P 1250 2850
 F 0 "C2" H 1260 2920 50  0000 L CNN
@@ -107,7 +75,7 @@ F 4 "712-1275-1-ND" H 1250 2850 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C4
+L Device:C_Small C4
 U 1 1 56BE5ACF
 P 1450 2850
 F 0 "C4" H 1460 2920 50  0000 L CNN
@@ -119,7 +87,7 @@ F 4 "712-1275-1-ND" H 1450 2850 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_Small Y1
+L Device:Crystal_Small Y1
 U 1 1 56BE5D1C
 P 1350 2600
 F 0 "Y1" H 1350 2700 50  0000 C CNN
@@ -131,7 +99,7 @@ F 4 "644-1156-1-ND" H 1350 2600 60  0001 C CNN "Digikey Part No."
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR01
+L power:+3.3V #PWR01
 U 1 1 56BE5E8C
 P 2150 1150
 F 0 "#PWR01" H 2150 1000 50  0001 C CNN
@@ -142,7 +110,7 @@ F 3 "" H 2150 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR02
+L power:+3.3V #PWR02
 U 1 1 56BE5EB9
 P 1650 1150
 F 0 "#PWR02" H 1650 1000 50  0001 C CNN
@@ -153,7 +121,7 @@ F 3 "" H 1650 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 56BE5ED8
 P 1650 2150
 F 0 "#PWR03" H 1650 1900 50  0001 C CNN
@@ -164,7 +132,7 @@ F 3 "" H 1650 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 56BE5F05
 P 1800 2150
 F 0 "#PWR04" H 1800 1900 50  0001 C CNN
@@ -175,7 +143,7 @@ F 3 "" H 1800 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR05
+L power:+3.3V #PWR05
 U 1 1 56BE6374
 P 1100 2250
 F 0 "#PWR05" H 1100 2100 50  0001 C CNN
@@ -186,7 +154,7 @@ F 3 "" H 1100 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 56BE6486
 P 1350 3050
 F 0 "#PWR06" H 1350 2800 50  0001 C CNN
@@ -197,7 +165,7 @@ F 3 "" H 1350 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C11
+L Device:C_Small C11
 U 1 1 56BE5364
 P 6800 1650
 F 0 "C11" H 6810 1720 50  0000 L CNN
@@ -209,7 +177,7 @@ F 4 "490-5415-1-ND" H 6800 1650 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C12
+L Device:C_Small C12
 U 1 1 56BE54D8
 P 7000 1650
 F 0 "C12" H 7010 1720 50  0000 L CNN
@@ -221,7 +189,7 @@ F 4 "490-5415-1-ND" H 7000 1650 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR07
+L power:+3.3V #PWR07
 U 1 1 56BE5515
 P 6400 1250
 F 0 "#PWR07" H 6400 1100 50  0001 C CNN
@@ -232,7 +200,7 @@ F 3 "" H 6400 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 56BE5541
 P 6900 1850
 F 0 "#PWR08" H 6900 1600 50  0001 C CNN
@@ -243,7 +211,7 @@ F 3 "" H 6900 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C8
+L Device:C_Small C8
 U 1 1 56BE9290
 P 4250 7900
 F 0 "C8" H 4260 7970 50  0000 L CNN
@@ -255,7 +223,7 @@ F 4 "490-13409-1-ND" H 4250 7900 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 56C11E63
 P 4950 8300
 F 0 "#PWR09" H 4950 8050 50  0001 C CNN
@@ -270,7 +238,7 @@ USB_D-
 Text GLabel 11150 4500 1    60   Input ~ 0
 USB_D+
 $Comp
-L +3.3V #PWR010
+L power:+3.3V #PWR010
 U 1 1 56C15B89
 P 5550 7550
 F 0 "#PWR010" H 5550 7400 50  0001 C CNN
@@ -281,7 +249,7 @@ F 3 "" H 5550 7550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C9
+L Device:C_Small C9
 U 1 1 56C15D54
 P 5700 7900
 F 0 "C9" H 5710 7970 50  0000 L CNN
@@ -293,7 +261,7 @@ F 4 "490-13409-1-ND" H 5700 7900 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 56C15E3A
 P 5700 8100
 F 0 "#PWR011" H 5700 7850 50  0001 C CNN
@@ -306,7 +274,7 @@ $EndComp
 Text Notes 3300 6850 0    157  Italic 31
 USB + Voltage Regulator
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 56E1705D
 P 2150 4700
 F 0 "#PWR012" H 2150 4450 50  0001 C CNN
@@ -327,7 +295,7 @@ SWCLK
 Text GLabel 8550 1250 2    60   Input ~ 0
 SWDIO
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 57050FFC
 P 8950 1750
 F 0 "#PWR013" H 8950 1500 50  0001 C CNN
@@ -338,7 +306,7 @@ F 3 "" H 8950 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR014
+L power:+3.3V #PWR014
 U 1 1 570510C7
 P 8550 950
 F 0 "#PWR014" H 8550 800 50  0001 C CNN
@@ -357,7 +325,7 @@ USB_D+
 Text GLabel 6300 3750 2    60   Input ~ 0
 USB_HOST_EN
 $Comp
-L SW_PUSH SW4
+L AP2112k:SW_PUSH SW4
 U 1 1 57898945
 P 8500 2750
 F 0 "SW4" H 8650 2860 50  0000 C CNN
@@ -371,7 +339,7 @@ $EndComp
 Text GLabel 8000 2750 0    60   Input ~ 0
 RESET
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 5789A9F6
 P 8900 3150
 F 0 "#PWR015" H 8900 2900 50  0001 C CNN
@@ -382,13 +350,13 @@ F 3 "" H 8900 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 1600 2300 1600
+	1950 1600 2150 1600
 Wire Wire Line
 	2150 1600 2150 1450
 Wire Wire Line
 	2150 1250 2150 1150
 Wire Wire Line
-	1650 1150 1650 1850
+	1650 1150 1650 1700
 Wire Wire Line
 	2300 1700 1650 1700
 Connection ~ 1650 1700
@@ -411,28 +379,28 @@ Wire Wire Line
 Wire Wire Line
 	1500 2250 1100 2250
 Wire Wire Line
-	1250 2450 1250 2750
+	1250 2450 1250 2600
 Wire Wire Line
 	2300 2450 1250 2450
 Connection ~ 1250 2600
 Wire Wire Line
-	1450 2550 1450 2750
+	1450 2550 1450 2600
 Wire Wire Line
 	1450 2550 2300 2550
 Connection ~ 1450 2600
 Wire Wire Line
 	1250 2950 1250 3050
 Wire Wire Line
-	1250 3050 1450 3050
+	1250 3050 1350 3050
 Wire Wire Line
 	1450 3050 1450 2950
 Connection ~ 1350 3050
 Wire Wire Line
 	6400 1550 6000 1550
 Wire Wire Line
-	6400 1250 6400 1650
+	6400 1250 6400 1400
 Wire Wire Line
-	6400 1400 7000 1400
+	6400 1400 6800 1400
 Wire Wire Line
 	7000 1400 7000 1550
 Connection ~ 6400 1400
@@ -443,12 +411,12 @@ Wire Wire Line
 	6400 1650 6000 1650
 Connection ~ 6400 1550
 Wire Wire Line
-	6800 1750 7000 1750
+	6800 1750 6900 1750
 Wire Wire Line
 	6900 1750 6900 1850
 Connection ~ 6900 1750
 Wire Wire Line
-	3350 7650 4500 7650
+	3350 7650 3400 7650
 Wire Wire Line
 	4500 7800 4400 7800
 Wire Wire Line
@@ -458,14 +426,14 @@ Wire Wire Line
 	4250 7800 4250 7650
 Connection ~ 4250 7650
 Wire Wire Line
-	4950 8000 4950 8300
+	4950 8000 4950 8150
 Wire Wire Line
 	4250 8000 4250 8150
 Wire Wire Line
 	4250 8150 4950 8150
 Connection ~ 4950 8150
 Wire Wire Line
-	5400 7650 5700 7650
+	5400 7650 5550 7650
 Wire Wire Line
 	5700 7650 5700 7800
 Wire Wire Line
@@ -484,7 +452,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 4200 2150 4200
 Wire Wire Line
-	2150 3950 2150 4700
+	2150 3950 2150 4200
 Wire Wire Line
 	2300 4300 2150 4300
 Connection ~ 2150 4300
@@ -580,7 +548,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 2750 8900 3150
 $Comp
-L LED D1
+L Device:LED D1
 U 1 1 5A05EB75
 P 11400 1700
 F 0 "D1" H 11400 1800 50  0000 C CNN
@@ -592,7 +560,7 @@ F 4 "160-1446-1-ND" H 11400 1700 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L Device:R R8
 U 1 1 5A060762
 P 10900 1700
 F 0 "R8" V 10980 1700 50  0000 C CNN
@@ -610,7 +578,7 @@ Wire Wire Line
 Text GLabel 10600 1700 0    60   Input ~ 0
 TXLED
 $Comp
-L LED D2
+L Device:LED D2
 U 1 1 5A062253
 P 11400 2000
 F 0 "D2" H 11400 2100 50  0000 C CNN
@@ -622,7 +590,7 @@ F 4 "160-1448-1-ND" H 11400 2000 60  0001 C CNN "Digikey Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L Device:R R9
 U 1 1 5A06225A
 P 10900 2000
 F 0 "R9" V 10980 2000 50  0000 C CNN
@@ -642,7 +610,7 @@ RXLED
 Wire Wire Line
 	11550 1700 11850 1700
 Wire Wire Line
-	11850 1550 11850 2000
+	11850 1550 11850 1700
 Wire Wire Line
 	11850 2000 11550 2000
 Text GLabel 1950 2850 0    39   Input ~ 0
@@ -698,7 +666,7 @@ MOSI
 Text GLabel 6250 4350 2    39   Input ~ 0
 CLK
 $Comp
-L SAMD21_MOD-RESCUE-hccg U4
+L hccg-rescue:SAMD21_MOD-RESCUE-hccg U4
 U 1 1 5AF54837
 P 11250 5250
 F 0 "U4" H 11250 4250 60  0000 C CNN
@@ -709,7 +677,7 @@ F 3 "" H 11250 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR016
+L power:+3.3V #PWR016
 U 1 1 5AF56401
 P 11850 1550
 F 0 "#PWR016" H 11850 1400 50  0001 C CNN
@@ -725,7 +693,7 @@ TXLED
 Text GLabel 1950 3350 0    60   Input ~ 0
 RXLED
 $Comp
-L D_Zener_Small D4
+L Device:D_Zener_Small D4
 U 1 1 5AF53C61
 P 3250 7650
 F 0 "D4" H 3250 7740 50  0000 C CNN
@@ -737,7 +705,7 @@ F 4 "497-3381-1-ND" H 3250 7650 60  0001 C CNN "Digikey Part No."
 	-1   0    0    1   
 $EndComp
 $Comp
-L D_Zener_Small D3
+L Device:D_Zener_Small D3
 U 1 1 5AF53D30
 P 3250 7400
 F 0 "D3" H 3250 7490 50  0000 C CNN
@@ -762,7 +730,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 7650 3150 7650
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 5AF559B5
 P 11050 4050
 F 0 "#PWR017" H 11050 3800 50  0001 C CNN
@@ -779,7 +747,7 @@ Wire Wire Line
 Wire Wire Line
 	11600 4050 11450 4500
 $Comp
-L VBUS #PWR018
+L power:VBUS #PWR018
 U 1 1 5AF58F0F
 P 2850 7350
 F 0 "#PWR018" H 2850 7200 50  0001 C CNN
@@ -790,7 +758,7 @@ F 3 "" H 2850 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VBUS #PWR019
+L power:VBUS #PWR019
 U 1 1 5AF59366
 P 11350 4050
 F 0 "#PWR019" H 11350 3900 50  0001 C CNN
@@ -801,7 +769,7 @@ F 3 "" H 11350 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR020
+L power:+BATT #PWR020
 U 1 1 5AF5A22E
 P 11600 4050
 F 0 "#PWR020" H 11600 3900 50  0001 C CNN
@@ -832,7 +800,7 @@ D3
 Text GLabel 11800 5500 2    39   Input ~ 0
 D4
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 5AF924A7
 P 11850 5800
 F 0 "#PWR021" H 11850 5550 50  0001 C CNN
@@ -851,7 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 4800 10650 4600
 $Comp
-L +3.3V #PWR022
+L power:+3.3V #PWR022
 U 1 1 5AF9B481
 P 10650 4600
 F 0 "#PWR022" H 10650 4450 50  0001 C CNN
@@ -888,7 +856,7 @@ D12
 Text GLabel 10700 5100 0    39   Input ~ 0
 D13
 $Comp
-L TEST_1P J1
+L conn:TEST_1P J1
 U 1 1 5AFA35C8
 P 8350 1150
 F 0 "J1" H 8350 1420 50  0000 C CNN
@@ -899,7 +867,7 @@ F 3 "" H 8550 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J2
+L conn:TEST_1P J2
 U 1 1 5AFA3675
 P 8350 1250
 F 0 "J2" H 8350 1520 50  0000 C CNN
@@ -910,7 +878,7 @@ F 3 "" H 8550 1250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J3
+L conn:TEST_1P J3
 U 1 1 5AFA36DA
 P 8350 1350
 F 0 "J3" H 8350 1620 50  0000 C CNN
@@ -921,7 +889,7 @@ F 3 "" H 8550 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J4
+L conn:TEST_1P J4
 U 1 1 5AFA373E
 P 8350 1450
 F 0 "J4" H 8350 1720 50  0000 C CNN
@@ -932,7 +900,7 @@ F 3 "" H 8550 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TEST_1P J5
+L conn:TEST_1P J5
 U 1 1 5AFA37A5
 P 8350 1550
 F 0 "J5" H 8350 1820 50  0000 C CNN
@@ -945,7 +913,7 @@ $EndComp
 Text GLabel 11800 4900 2    39   Input ~ 0
 SDA
 $Comp
-L +BATT #PWR023
+L power:+BATT #PWR023
 U 1 1 5AF59B82
 P 3050 7350
 F 0 "#PWR023" H 3050 7200 50  0001 C CNN
@@ -956,7 +924,7 @@ F 3 "" H 3050 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AP2112K-3.3V U1
+L AP2112k:AP2112K-3.3V U1
 U 1 1 5B50C8D3
 P 4950 7700
 F 0 "U1" H 4700 7900 40  0000 C CNN
@@ -967,4 +935,40 @@ F 4 "AP2112K-3.3TRG1DICT-ND" H 4950 7700 60  0001 C CNN "Digikey Part No."
 	1    4950 7700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1650 1700 1650 1850
+Wire Wire Line
+	1250 2600 1250 2750
+Wire Wire Line
+	1450 2600 1450 2750
+Wire Wire Line
+	1350 3050 1450 3050
+Wire Wire Line
+	6400 1400 6400 1550
+Wire Wire Line
+	6800 1400 7000 1400
+Wire Wire Line
+	6400 1550 6400 1650
+Wire Wire Line
+	6900 1750 7000 1750
+Wire Wire Line
+	4400 7650 4500 7650
+Wire Wire Line
+	4250 7650 4400 7650
+Wire Wire Line
+	4950 8150 4950 8300
+Wire Wire Line
+	5550 7650 5700 7650
+Wire Wire Line
+	2150 4300 2150 4400
+Wire Wire Line
+	2150 4400 2150 4700
+Wire Wire Line
+	2150 1600 2300 1600
+Wire Wire Line
+	2150 4200 2150 4300
+Wire Wire Line
+	11850 1700 11850 2000
+Wire Wire Line
+	3400 7650 4250 7650
 $EndSCHEMATC
