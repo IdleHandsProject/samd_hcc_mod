@@ -27,3 +27,6 @@ _autosave-*
 
 *.zip
 *.rar
+
+# Gerber Files
+*.gbr
